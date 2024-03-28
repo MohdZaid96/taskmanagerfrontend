@@ -55,11 +55,19 @@
 
 #home {
   display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     padding: 1rem;
     
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  
+    @media (max-width: 480px) {
+      grid-template-columns: 1fr; 
+    }
 }
+
 #home > div{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }

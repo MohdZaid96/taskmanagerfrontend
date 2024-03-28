@@ -41,7 +41,8 @@ const Navbar = () => {
           displayTask: !authState.displayTask,
         });
 
-        setTask(null);
+        setTask("");
+        setDesc("")
 
         console.log("task Added");
       } catch (error) {
@@ -97,6 +98,7 @@ const Navbar = () => {
                       <input
                         type="String"
                         placeholder="Enter Task"
+                        value={task}
                         onChange={(e) => {
                           setTask(e.target.value);
                         }}
@@ -105,6 +107,7 @@ const Navbar = () => {
                       <input
                         type="String"
                         placeholder="Enter desc"
+                        value={desc}
                         onChange={(e) => {
                           setDesc(e.target.value);
                         }}
@@ -122,6 +125,7 @@ const Navbar = () => {
                       <button
                         type="button"
                         className="btn btn-primary"
+                        data-bs-dismiss="modal"
                         onClick={handleAdd}
                       >
                         Add
