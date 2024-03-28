@@ -76,7 +76,7 @@ return (
     <input type="password" placeholder='Password' required onChange={(e)=>{
       setPassword(e.target.value)
     }}/>
-    <input type="password" placeholder='Change Password' required onChange={(e)=>{
+    <input type="password" placeholder='Confirm Password' required onChange={(e)=>{
       setPassword2(e.target.value)
     }}/>
     <button onClick={handleSignup}>Signup</button>

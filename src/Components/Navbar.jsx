@@ -66,6 +66,8 @@ const Navbar = () => {
                 className="btn btn-primary"
                 data-bs-toggle="modal"
                 data-bs-target="#staticBackdrop"
+
+                style={{backgroundColor:"black"}}
               >
                 Create
               </button>
